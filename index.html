@@ -14,15 +14,20 @@
         </video>
         <div id="bg"></div>
 
-        
+        <div class="conteudo">
+            <h1>Olá mundo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ducimus, id ullam nisi dicta eaque rerum aliquam similique accusamus ab, fugit ex? Inventore eos consequatur temporibus dolor. Architecto, voluptates itaque.</p>
+        </div>
     </div>
 
     
     <script type="text/javascript">
     let bg = document.querySelector('#bg');
+    let conteudo = document.querySelector('.conteudo')
     window.addEventListener('scroll',function(){
         let value = window.scrollY;
-        bg.style.backgroundSize = 100 + value*2+"px";
+        bg.style.backgroundSize = 2500 - value*2+"px";
+        
     })
     </script>
 
